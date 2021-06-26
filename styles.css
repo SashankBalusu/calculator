@@ -1,0 +1,36 @@
+
+#container {
+    display:grid;
+    height:auto;
+    width:fit-content;
+    background-color: aquamarine;
+    border: thin solid black;
+    justify-items: center;
+    grid-template-rows: repeat(6, 40px);
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 40px);
+    grid-template-areas:
+    "answer answer answer answer"
+    "clear clear delete delete"
+    "one two three op"
+    "four five six op"
+    "seven eight nine op"
+    "dec zero equal op";
+}
+#display {
+    background-color: #ecebeb;
+    width:90%;
+    border: thin solid black;
+    height:20px;
+    grid-area : answer;
+}
+button {
+    width:90%;
+    height: 90%;
+}
+#clear {
+    grid-area: clear;
+}
+#delete {
+    grid-area:delete;
+}
