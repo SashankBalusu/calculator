@@ -1,14 +1,20 @@
-
+body {
+    background-color:blanchedalmond;
+}
 #container {
     display:grid;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:50px;
     height:auto;
     width:fit-content;
-    background-color: aquamarine;
+    background-color: #2A2B2DFF;
+    border-radius: 10px;
     border: thin solid black;
     justify-items: center;
-    grid-template-rows: repeat(6, 40px);
-    grid-gap: 10px;
-    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: repeat(6, 100px);
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 100px);
     grid-template-areas:
     "answer answer answer answer"
     "clear clear delete delete"
@@ -18,19 +24,54 @@
     "dec zero equal op";
 }
 #display {
+    font-size: 70px;
+    margin-top:20px;
+    border-radius: 10px;
     background-color: #ecebeb;
     width:90%;
+    height: 90%;
     border: thin solid black;
-    height:20px;
+    
     grid-area : answer;
 }
 button {
-    width:90%;
-    height: 90%;
+    font-size: 30px;
+    width:80%;
+    height:80%;
+    border-radius:10px;
 }
 #clear {
+    margin-top:31px;
     grid-area: clear;
+    height:50%;
 }
 #delete {
+    margin-top:31px;
     grid-area:delete;
+    height:50%;
+}
+.op {
+    background-color:#D9514EFF;
+    color: #2A2B2DFF;
+}
+.num {
+    background-color:#2DA8D8FF;
+    color:#2A2B2DFF;
+
+}
+#clear {
+    background-color:#D9514EFF;
+    color: #2A2B2DFF;
+}
+#delete {
+    background-color:#D9514EFF;
+    color: #2A2B2DFF;
+}
+#decimal {
+    background-color:#2DA8D8FF;
+    color:#2A2B2DFF;
+}
+#equal {
+    background-color:#2DA8D8FF;
+    color:#2A2B2DFF;
 }
